@@ -1,0 +1,69 @@
+<svg width="900" height="210" viewBox="0 0 900 210"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- BACKGROUND -->
+  <rect x="10" y="10" width="880" height="190" rx="24"
+        fill="#020617"/>
+
+  <!-- FAKE GLOW BORDER (LAYERED) -->
+  <rect x="10" y="10" width="880" height="190" rx="24"
+        fill="none"
+        stroke="#38bdf8"
+        stroke-width="12"
+        opacity="0.18"/>
+
+  <rect x="10" y="10" width="880" height="190" rx="24"
+        fill="none"
+        stroke="#60a5fa"
+        stroke-width="7"
+        opacity="0.35"/>
+
+  <rect x="10" y="10" width="880" height="190" rx="24"
+        fill="none"
+        stroke="#7dd3fc"
+        stroke-width="3"/>
+
+  <!-- TITLE -->
+  <text x="70" y="78"
+        font-size="30"
+        font-weight="700"
+        fill="#f8fafc"
+        font-family="Segoe UI, sans-serif">
+    ☁️ CRM-Driven Internship Application Tracker
+  </text>
+
+  <!-- SUBTITLE -->
+  <text x="70" y="112"
+        font-size="17"
+        fill="#93c5fd"
+        font-family="Segoe UI, sans-serif">
+    Salesforce-Powered Internship Tracker & Skills Badge Manager
+  </text>
+
+  <!-- TECH STACK -->
+  <text x="70" y="145"
+        font-size="15"
+        font-weight="700"
+        fill="#38bdf8"
+        font-family="Segoe UI, sans-serif"
+        letter-spacing="1.2">
+    APEX · LWC · FLOWS
+  </text>
+
+  <!-- SALESFORCE CLOUD ICON -->
+  <g transform="translate(720,55)">
+    <circle cx="40" cy="30" r="26" fill="#38bdf8"/>
+    <circle cx="65" cy="24" r="22" fill="#38bdf8"/>
+    <circle cx="90" cy="30" r="26" fill="#38bdf8"/>
+    <circle cx="65" cy="42" r="30" fill="#38bdf8"/>
+
+    <text x="33" y="38"
+          font-size="14"
+          font-weight="700"
+          fill="#020617"
+          font-family="Segoe UI, sans-serif">
+      salesforce
+    </text>
+  </g>
+
+</svg>
