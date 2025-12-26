@@ -2,19 +2,16 @@
      xmlns="http://www.w3.org/2000/svg">
 
   <defs>
-    <!-- Galaxy gradient -->
-    <linearGradient id="galaxy" gradientUnits="userSpaceOnUse"
-      x1="0" y1="0" x2="820" y2="0">
-      <stop offset="0%" stop-color="#7f5af0"/>
-      <stop offset="25%" stop-color="#22d3ee"/>
-      <stop offset="50%" stop-color="#2cb67d"/>
-      <stop offset="75%" stop-color="#f472b6"/>
-      <stop offset="100%" stop-color="#7f5af0"/>
+    <!-- Galaxy LED gradient -->
+    <linearGradient id="galaxy-led" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="50%" stop-color="#7c7cff"/>
+      <stop offset="100%" stop-color="#c77dff"/>
     </linearGradient>
 
-    <!-- Glow -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+    <!-- Soft glow -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -22,54 +19,77 @@
     </filter>
   </defs>
 
-  <!-- Card background -->
-  <rect x="20" y="20" width="780" height="150" rx="16"
-        fill="#0b0f1a"/>
+  <!-- Background -->
+  <rect x="10" y="10" width="800" height="170" rx="18" fill="#0b0f1a"/>
 
-  <!-- Running galaxy border -->
-  <rect x="10" y="10" width="800" height="170" rx="20"
+  <!-- Galaxy LED border -->
+  <rect x="10" y="10" width="800" height="170" rx="18"
         fill="none"
-        stroke="url(#galaxy)"
+        stroke="url(#galaxy-led)"
         stroke-width="3"
         stroke-dasharray="140 660"
-        filter="url(#glow)">
+        filter="url(#softGlow)">
     <animate
       attributeName="stroke-dashoffset"
       from="0"
       to="-800"
-      dur="7s"
+      dur="8s"
       repeatCount="indefinite"/>
   </rect>
 
+  <!-- Stars -->
+  <g fill="white">
+    <!-- Star 1 -->
+    <circle cx="120" cy="40" r="1.4" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Star 2 -->
+    <circle cx="300" cy="30" r="1" opacity="0.4">
+      <animate attributeName="opacity" values="0.1;0.8;0.1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Star 3 -->
+    <circle cx="520" cy="55" r="1.8" opacity="0.7">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Star 4 -->
+    <circle cx="700" cy="45" r="1.2" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Star 5 -->
+    <circle cx="420" cy="80" r="0.9" opacity="0.3">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Moon -->
+  <g opacity="0">
+    <circle cx="680" cy="75" r="10" fill="#e6e6ff"/>
+    <animate attributeName="opacity"
+             values="0;1;1;0"
+             keyTimes="0;0.25;0.75;1"
+             dur="2s"
+             repeatCount="indefinite"/>
+  </g>
+
   <!-- Title -->
-  <text x="60" y="80"
-        fill="#e6ebff"
-        font-size="28"
+  <text x="70" y="95"
+        fill="#e6e6ff"
+        font-size="26"
         font-weight="600"
         font-family="Segoe UI, sans-serif">
-    🚀 CAMPUZ__NAVIGATION
+    🚌 CAMPUZ__NAVIGATION
   </text>
 
   <!-- Subtitle -->
-  <text x="60" y="115"
-        fill="#9aa4bf"
-        font-size="16"
+  <text x="70" y="125"
+        fill="#9aa4ff"
+        font-size="14"
         font-family="Segoe UI, sans-serif">
-    🌌 Smart campus navigation through the galaxy of data
+    Smart campus navigation through the galaxy of data
   </text>
-
-  <!-- Star flicker -->
-  <circle cx="740" cy="50" r="2" fill="#ffffff">
-    <animate attributeName="opacity"
-             values="0;1;0"
-             dur="2.5s"
-             repeatCount="indefinite"/>
-  </circle>
-  <circle cx="710" cy="90" r="1.5" fill="#ffffff">
-    <animate attributeName="opacity"
-             values="1;0;1"
-             dur="3.5s"
-             repeatCount="indefinite"/>
-  </circle>
 
 </svg>
