@@ -1,47 +1,63 @@
 <svg width="900" height="210" viewBox="0 0 900 210"
      xmlns="http://www.w3.org/2000/svg">
 
-  <!-- BACKGROUND -->
-  <rect x="10" y="10" width="880" height="190" rx="24"
+  <defs>
+    <!-- Border glow gradient -->
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+
+    <!-- Strong outer glow -->
+    <filter id="outerGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- CARD BACKGROUND -->
+  <rect x="10" y="10" width="880" height="190" rx="22"
         fill="#020617"/>
 
-  <!-- FAKE GLOW BORDER (LAYERED) -->
-  <rect x="10" y="10" width="880" height="190" rx="24"
-        fill="none"
-        stroke="#38bdf8"
-        stroke-width="12"
-        opacity="0.18"/>
+  <!-- 🌌 SOFT DOT BACKGROUND -->
+  <g fill="white">
+    <circle cx="140" cy="45" r="1.2" opacity="0.5"/>
+    <circle cx="300" cy="35" r="1" opacity="0.4"/>
+    <circle cx="460" cy="60" r="1.4" opacity="0.6"/>
+    <circle cx="620" cy="40" r="1.1" opacity="0.5"/>
+    <circle cx="760" cy="55" r="1.3" opacity="0.6"/>
+  </g>
 
-  <rect x="10" y="10" width="880" height="190" rx="24"
+  <!-- BRIGHT CONTINUOUS BORDER (SAME AS WORKING ONE) -->
+  <rect x="10" y="10" width="880" height="190" rx="22"
         fill="none"
-        stroke="#60a5fa"
-        stroke-width="7"
-        opacity="0.35"/>
-
-  <rect x="10" y="10" width="880" height="190" rx="24"
-        fill="none"
-        stroke="#7dd3fc"
-        stroke-width="3"/>
+        stroke="url(#borderGlow)"
+        stroke-width="4"
+        filter="url(#outerGlow)"/>
 
   <!-- TITLE -->
-  <text x="70" y="78"
+  <text x="80" y="82"
         font-size="30"
         font-weight="700"
         fill="#f8fafc"
         font-family="Segoe UI, sans-serif">
-    ☁️ CRM-Driven Internship Application Tracker
+    ☁️ CRM Internship Application Tracker
   </text>
 
   <!-- SUBTITLE -->
-  <text x="70" y="112"
-        font-size="17"
+  <text x="80" y="118"
+        font-size="16"
         fill="#93c5fd"
         font-family="Segoe UI, sans-serif">
-    Salesforce-Powered Internship Tracker & Skills Badge Manager
+    Salesforce-Powered Internship & Skills Management System
   </text>
 
   <!-- TECH STACK -->
-  <text x="70" y="145"
+  <text x="80" y="150"
         font-size="15"
         font-weight="700"
         fill="#38bdf8"
@@ -51,13 +67,13 @@
   </text>
 
   <!-- SALESFORCE CLOUD ICON -->
-  <g transform="translate(720,55)">
-    <circle cx="40" cy="30" r="26" fill="#38bdf8"/>
-    <circle cx="65" cy="24" r="22" fill="#38bdf8"/>
-    <circle cx="90" cy="30" r="26" fill="#38bdf8"/>
-    <circle cx="65" cy="42" r="30" fill="#38bdf8"/>
+  <g transform="translate(730,60)">
+    <circle cx="40" cy="30" r="24" fill="#38bdf8"/>
+    <circle cx="65" cy="24" r="20" fill="#38bdf8"/>
+    <circle cx="90" cy="30" r="24" fill="#38bdf8"/>
+    <circle cx="65" cy="42" r="28" fill="#38bdf8"/>
 
-    <text x="33" y="38"
+    <text x="32" y="38"
           font-size="14"
           font-weight="700"
           fill="#020617"
