@@ -1,0 +1,71 @@
+<svg
+  width="100%"
+  height="70"
+  viewBox="0 0 1200 70"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+    <!-- Divider Gradient -->
+    <linearGradient id="galaxyLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C7CFF"/>
+      <stop offset="25%" stop-color="#9F7CFF"/>
+      <stop offset="50%" stop-color="#4FD1FF"/>
+      <stop offset="75%" stop-color="#7CFFB2"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <!-- Strong Star Glow -->
+    <radialGradient id="starCore">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#FFF7AE"/>
+      <stop offset="70%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Galaxy Divider Line -->
+  <line
+    x1="0"
+    y1="35"
+    x2="1200"
+    y2="35"
+    stroke="url(#galaxyLine)"
+    stroke-width="2"
+    opacity="0.6"
+  />
+
+  <!-- Shooting Star Core -->
+  <circle r="10" fill="url(#starCore)" filter="url(#strongGlow)">
+    <animateMotion
+      dur="1s"
+      repeatCount="indefinite"
+      path="M -100 35 L 1300 35"
+    />
+  </circle>
+
+  <!-- Bright Trail -->
+  <rect
+    x="-120"
+    y="32"
+    width="120"
+    height="6"
+    fill="url(#galaxyLine)"
+    opacity="0.9"
+  >
+    <animateMotion
+      dur="1s"
+      repeatCount="indefinite"
+      path="M -100 0 L 1300 0"
+    />
+  </rect>
+
+</svg>
