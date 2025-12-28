@@ -1,0 +1,98 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    GitHub-Compatible Terminal SVG
+    - Pure SVG implementation
+    - Fully scalable vector graphics
+    - "Camo" proxy friendly
+  -->
+
+  <defs>
+    <!-- Terminal Background Gradient -->
+    <linearGradient id="term-gradient" x1="0" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+
+    <!-- Syntax Highlighting Colors -->
+    <style>
+      .keyword { fill: #ff7b72; }   /* Red/Pink (const, return) */
+      .func { fill: #d2a8ff; }      /* Purple (functions) */
+      .string { fill: #a5d6ff; }    /* Light Blue (strings) */
+      .obj { fill: #79c0ff; }       /* Blue (keys, properties) */
+      .plain { fill: #c9d1d9; }     /* White/Grey (variables) */
+      .comment { fill: #8b949e; font-style: italic; } /* Grey (comments) */
+      .cursor { animation: blink 1s step-end infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <!-- Main Background (Transparent or matching GitHub bg) -->
+  <rect width="800" height="400" fill="#010409" rx="0" opacity="0"/>
+
+  <!-- Window Shadow -->
+  <rect x="55" y="55" width="690" height="290" rx="12" fill="#000" opacity="0.5" filter="blur(10px)"/>
+
+  <!-- Terminal Window Frame -->
+  <rect x="50" y="50" width="700" height="300" rx="10" fill="url(#term-gradient)" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Window Controls (Header) -->
+  <path d="M50 60 C 50 54.477, 54.477 50, 60 50 L 740 50 C 745.523 50, 750 54.477, 750 60 L 750 85 L 50 85 Z" fill="#21262d" fill-opacity="0.5"/>
+  <line x1="50" y1="85" x2="750" y2="85" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Traffic Lights -->
+  <circle cx="80" cy="68" r="6" fill="#ff5f56"/>
+  <circle cx="100" cy="68" r="6" fill="#ffbd2e"/>
+  <circle cx="120" cy="68" r="6" fill="#27c93f"/>
+
+  <!-- Window Title -->
+  <text x="400" y="73" text-anchor="middle" fill="#8b949e" font-family="Consolas, 'Courier New', monospace" font-size="12">~/profile/README.md</text>
+
+  <!-- Code Content -->
+  <g transform="translate(80, 130)" font-family="Consolas, 'Courier New', monospace" font-size="16">
+    
+    <!-- Line 1 -->
+    <text x="0" y="0">
+      <tspan class="keyword">class</tspan> <tspan class="func">Developer</tspan> <tspan class="plain">{</tspan>
+    </text>
+
+    <!-- Line 2 -->
+    <text x="20" y="30">
+      <tspan class="keyword">constructor</tspan><tspan class="plain">() {</tspan>
+    </text>
+
+    <!-- Line 3 -->
+    <text x="40" y="60">
+      <tspan class="plain">this.</tspan><tspan class="obj">name</tspan> <tspan class="keyword">=</tspan> <tspan class="string">"Your Name"</tspan><tspan class="plain">;</tspan>
+    </text>
+
+    <!-- Line 4 -->
+    <text x="40" y="90">
+      <tspan class="plain">this.</tspan><tspan class="obj">role</tspan> <tspan class="keyword">=</tspan> <tspan class="string">"Full Stack Engineer"</tspan><tspan class="plain">;</tspan>
+    </text>
+
+    <!-- Line 5 -->
+    <text x="40" y="120">
+      <tspan class="plain">this.</tspan><tspan class="obj">stack</tspan> <tspan class="keyword">=</tspan> <tspan class="plain">[</tspan><tspan class="string">"React"</tspan><tspan class="plain">, </tspan><tspan class="string">"Node.js"</tspan><tspan class="plain">, </tspan><tspan class="string">"Python"</tspan><tspan class="plain">];</tspan>
+    </text>
+
+    <!-- Line 6 -->
+    <text x="20" y="150" class="plain">}</text>
+
+    <!-- Line 7 -->
+    <text x="20" y="180">
+      <tspan class="func">sayHello</tspan><tspan class="plain">() {</tspan>
+    </text>
+
+    <!-- Line 8 -->
+    <text x="40" y="210">
+      <tspan class="keyword">return</tspan> <tspan class="string">"Let's build something amazing!"</tspan><tspan class="plain">;</tspan> <tspan class="cursor" fill="#fff">|</tspan>
+    </text>
+
+    <!-- Line 9 -->
+    <text x="20" y="240" class="plain">}</text>
+
+    <!-- Line 10 -->
+    <text x="0" y="270" class="plain">}</text>
+  </g>
+
+</svg>
