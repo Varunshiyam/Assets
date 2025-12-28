@@ -1,0 +1,128 @@
+<svg
+  width="100%"
+  height="90"
+  viewBox="0 0 1200 90"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+    <!-- White glow -->
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ===== STAR FLOW GROUP ===== -->
+  <g fill="#ffffff" filter="url(#starGlow)">
+
+    <!-- TEMPLATE STAR -->
+    <!-- points = real star shape -->
+    <!-- We reuse it 20+ times with different offsets -->
+
+    <!-- STAR 1 -->
+    <polygon points="0,-6 2,-2 6,0 2,2 0,6 -2,2 -6,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" path="M -100 45 L 1300 45"/>
+    </polygon>
+
+    <!-- STAR 2 -->
+    <polygon points="0,-5 1.8,-1.8 5,0 1.8,1.8 0,5 -1.8,1.8 -5,0 -1.8,-1.8">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-0.25s" path="M -160 40 L 1300 40"/>
+    </polygon>
+
+    <!-- STAR 3 -->
+    <polygon points="0,-7 2,-2 7,0 2,2 0,7 -2,2 -7,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-0.5s" path="M -220 50 L 1300 50"/>
+    </polygon>
+
+    <!-- STAR 4 -->
+    <polygon points="0,-6 2,-2 6,0 2,2 0,6 -2,2 -6,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-0.75s" path="M -280 43 L 1300 43"/>
+    </polygon>
+
+    <!-- STAR 5 -->
+    <polygon points="0,-5 1.8,-1.8 5,0 1.8,1.8 0,5 -1.8,1.8 -5,0 -1.8,-1.8">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-1s" path="M -340 47 L 1300 47"/>
+    </polygon>
+
+    <!-- STAR 6 -->
+    <polygon points="0,-7 2,-2 7,0 2,2 0,7 -2,2 -7,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-1.25s" path="M -400 45 L 1300 45"/>
+    </polygon>
+
+    <!-- STAR 7 -->
+    <polygon points="0,-6 2,-2 6,0 2,2 0,6 -2,2 -6,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-1.5s" path="M -460 40 L 1300 40"/>
+    </polygon>
+
+    <!-- STAR 8 -->
+    <polygon points="0,-5 1.8,-1.8 5,0 1.8,1.8 0,5 -1.8,1.8 -5,0 -1.8,-1.8">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-1.75s" path="M -520 50 L 1300 50"/>
+    </polygon>
+
+    <!-- STAR 9 -->
+    <polygon points="0,-7 2,-2 7,0 2,2 0,7 -2,2 -7,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-2s" path="M -580 45 L 1300 45"/>
+    </polygon>
+
+    <!-- STAR 10 -->
+    <polygon points="0,-6 2,-2 6,0 2,2 0,6 -2,2 -6,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-2.25s" path="M -640 43 L 1300 43"/>
+    </polygon>
+
+    <!-- STAR 11 -->
+    <polygon points="0,-5 1.8,-1.8 5,0 1.8,1.8 0,5 -1.8,1.8 -5,0 -1.8,-1.8">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-2.5s" path="M -700 47 L 1300 47"/>
+    </polygon>
+
+    <!-- STAR 12 -->
+    <polygon points="0,-7 2,-2 7,0 2,2 0,7 -2,2 -7,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-2.75s" path="M -760 45 L 1300 45"/>
+    </polygon>
+
+    <!-- STAR 13 -->
+    <polygon points="0,-6 2,-2 6,0 2,2 0,6 -2,2 -6,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-3s" path="M -820 40 L 1300 40"/>
+    </polygon>
+
+    <!-- STAR 14 -->
+    <polygon points="0,-5 1.8,-1.8 5,0 1.8,1.8 0,5 -1.8,1.8 -5,0 -1.8,-1.8">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-3.25s" path="M -880 50 L 1300 50"/>
+    </polygon>
+
+    <!-- STAR 15 -->
+    <polygon points="0,-7 2,-2 7,0 2,2 0,7 -2,2 -7,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-3.5s" path="M -940 45 L 1300 45"/>
+    </polygon>
+
+    <!-- STAR 16 -->
+    <polygon points="0,-6 2,-2 6,0 2,2 0,6 -2,2 -6,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-3.75s" path="M -1000 43 L 1300 43"/>
+    </polygon>
+
+    <!-- STAR 17 -->
+    <polygon points="0,-5 1.8,-1.8 5,0 1.8,1.8 0,5 -1.8,1.8 -5,0 -1.8,-1.8">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-4s" path="M -1060 47 L 1300 47"/>
+    </polygon>
+
+    <!-- STAR 18 -->
+    <polygon points="0,-7 2,-2 7,0 2,2 0,7 -2,2 -7,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-4.25s" path="M -1120 45 L 1300 45"/>
+    </polygon>
+
+    <!-- STAR 19 -->
+    <polygon points="0,-6 2,-2 6,0 2,2 0,6 -2,2 -6,0 -2,-2">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-4.5s" path="M -1180 40 L 1300 40"/>
+    </polygon>
+
+    <!-- STAR 20 -->
+    <polygon points="0,-5 1.8,-1.8 5,0 1.8,1.8 0,5 -1.8,1.8 -5,0 -1.8,-1.8">
+      <animateMotion dur="5s" repeatCount="indefinite" begin="-4.75s" path="M -1240 50 L 1300 50"/>
+    </polygon>
+
+  </g>
+
+</svg>
